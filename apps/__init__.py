@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 app.debug = True
 password = quote_plus('niubi888@niudou')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:{}@47.111.233.122/DeepMoleNet'.format(password)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:{}@47.111.233.122/logPDatabase'.format(password)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 APPS_DIR = os.path.dirname(__file__)
